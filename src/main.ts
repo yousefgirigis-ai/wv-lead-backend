@@ -12,7 +12,7 @@ async function bootstrap() {
   // All API routes are under /api
   app.setGlobalPrefix('api');
 
-  const port = process.env.PORT ?? 3001;
+  const port = process.env.PORT ?? 3000;
   await app.listen(port);
   console.log(`\n🚀 Lead Capture API running on http://localhost:${port}/api`);
 
