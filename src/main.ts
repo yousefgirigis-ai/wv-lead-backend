@@ -6,7 +6,7 @@ async function bootstrap() {
 
   // Allow the React frontend to call this API
   app.enableCors({
-    origin: ['https://*.ngrok-free.app', 'http://localhost:3001', 'http://localhost:5173/'],
+    origin: "*",
     credentials: true,
   });
   // All API routes are under /api
